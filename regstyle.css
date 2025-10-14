@@ -1,0 +1,116 @@
+/*
+ * This CSS file centers the registration form on the page using a modern flexbox layout
+ * and provides basic styling for the form elements.
+ */
+
+/* Use a universal box-sizing for consistent layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Style the body to be a full-height flex container for centering */
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f4f8;
+}
+
+/* Style the form container */
+#registerForm {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Style the main heading */
+#signUp {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+/* Style the form labels */
+label {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+/* Style all input and select elements */
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Style the select element to match the inputs */
+select {
+  appearance: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* Style the checkbox container for better alignment */
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* Style the register button */
+#registerBtn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #334155;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#registerBtn:hover {
+  background-color: #1e293b;
+}
+
+/* Style the paragraph and link at the bottom of the form */
+p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

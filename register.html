@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="regstyle.css"> -->
+    <style>
+        body {
+            background-image: url(./media/image.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Sign-up</h1>
-    <!-- This is label and input filed for email and password -->
-    <label for="">Email or number</label><br>
-    <input placeholder="Enter your email" type="text"><br><br>
+    <form id="registerForm" action="">
+        <h1>Sign-up</h1>
+        <!-- This is label and input filed for email and password -->
+        <label for="">Email or number</label>
+        <input placeholder="Enter your email" type="text">
 
-    <!-- This is username filed  -->
+        <!-- This is username filed  -->
 
-    <label for="">username</label><br>
-    <input placeholder="username" type="text"><br><br>
+        <label for="">username</label>
+        <input placeholder="username" type="text">
 
-    <select name="" id="">
-        <option value="">Male</option>
-        <option value="">Female</option>
-        <option value="">Prefer not to say</option>
-    </select>
-    <br>
-    <br>
+        <select name="" id="">
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Prefer not to say</option>
+        </select>
 
-    <label for="">Password</label><br>
-    <input placeholder="password" type="text"><br><br>
 
-    <label for="">confirm password</label><br>
-    <input placeholder="confirm password" type="text"><br><br>
-    <input type="checkbox">Agree T & C<br><br>
-    <button>Register</button><br>
-    <p>Already have an account <a href="login.html">Login</a> </p>
+
+        <label for="">Password</label>
+        <input placeholder="password" type="text">
+
+        <label for="">confirm password</label>
+        <input placeholder="confirm password" type="text">
+        <input type="checkbox">Agree T & C
+        <button id="registerBtn">Register</button>
+        <p>Already have an account <a href="login.html">Login</a> </p>
+    </form>
 </body>
 
 </html>
